@@ -9,6 +9,13 @@ The PRU Bridge framework enables two-way data and event communication between th
     (why, how, etc.)
 
 ## API 
-
+### 1. ARM to PRU
+```python
+import pru_bridge
+pru = pru_bridge(0); #the pru cpu number
+pru.send_event(event_no)
+pru.write(channel, data)
+pru.read(channel, num_of_bytes)
+```
 ## extensions and future work
     (what SDKs can be built over this)
